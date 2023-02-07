@@ -48,7 +48,7 @@ ProduceDictionary={
     'Celery': {
         'cost': 3.07,
         'amt_sold': 18.5,
-        'total': 56.8
+        'total': 56.79
     },
     'Spinach': {
         'cost': 4.12,
@@ -193,7 +193,7 @@ ProduceDictionary={
     'Brussels sprouts': {
         'cost': 1.65,
         'amt_sold': 22.9,
-        'total': 37.79
+        'total': 37.78
     },
     'Kale': {
         'cost': 5.02,
@@ -207,3 +207,21 @@ ProduceDictionary={
     }
 }
 
+for key, value in ProduceDictionary.items():
+    if value['total'] != round(value['cost']*value['amt_sold'], 2):
+        print(f"Produce Name: {key} \nStated total: ${value['total']} \nCalculated total: ${round(value['cost']*value['amt_sold'], 2)} \n")
+
+#another way to do it:
+
+#for produce in ProduceDictionary:
+    #cost = ProduceDictionary[produce]['cost]
+    #amt = ProduceDictionary[produce]['amt_sold']
+    #stated_total = ProduceDictionary[produce]['total']
+    #calc_total = round(cost * amt, 2)
+
+    #if calc_total != stated_total:
+        #print(f"produce name: {produce}")
+        #print(f"Calculated total: ${calc_total:.2f}")
+        #print(f"Stated total: ${stated_total:.2f}")
+        #print()
+        #print()

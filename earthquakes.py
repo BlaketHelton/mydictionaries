@@ -70,3 +70,4 @@ for location, info in eq_dict.items():
 	print(f"Longitude: {info['longitude']}")
 	print(f"Latitude: {info['latitude']}")
 	print()
+   

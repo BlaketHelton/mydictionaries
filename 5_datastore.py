@@ -55,3 +55,33 @@ with open('retail_space.csv', 'w') as x:
   w.writeheader()
   for row in datastore['medical']:
     w.writerow(row)
+
+#or you can use:
+
+# import csv
+
+#retail_space = open("retail_space.csv", "w")
+#retail_space.csv = csv.writer(retail_space)
+
+#keys = datastore["medical"][0].keys()
+#retail_space_csv.writerow(keys)
+
+#for i in range(len(retail_space))
+  #blah blah blah 
+
+#retail_space.close()
+
+#or you can use:
+
+#outfile = open('retail_space.csv','w')
+#outfile.write('room-number,use,sq-ft,print\n')
+
+#list = datastore['medical']
+
+#for each in list:
+  #rn = each['rrom-number']
+  #etc...
+
+  #outfile.write(str(rn) + ',' + use + ',' + str(sq) + ',' + str(price) + '\n')
+
+#outfile.close()
